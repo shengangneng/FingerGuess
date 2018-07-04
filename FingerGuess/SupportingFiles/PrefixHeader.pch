@@ -1,0 +1,54 @@
+//
+//  PrefixHeader.pch
+//  FingerGuess
+//
+//  Created by gangneng shen on 2018/7/4.
+//  Copyright © 2018年 shengangneng. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "ColorConstant.h"
+#import "Masonry.h"
+#import "SVProgressHUD.h"
+
+
+
+/************************************************************************************************************************/
+/***** 格式化log *****/
+#ifdef DEBUG
+#define DLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define DLog( s, ... )
+#endif
+
+/************************************************************************************************************************/
+/***** 常用方法 *****/
+#define ImageName(name) [UIImage imageNamed:name]
+#define ImageContentOfFile(fileName, fileType) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(fileName) ofType:(fileType)]]
+// 通过tag获取view
+#define ViewWithTag(view, tag)   (id)[view viewWithTag: tag]
+// 字体大小（常规/粗体）
+#define Font(name, fontSize)     [UIFont fontWithName:(name) size:(fontSize)]
+#define SystemFont(fontSize)     [UIFont systemFontOfSize:fontSize]
+#define BoldSystemFont(fontSize) [UIFont boldSystemFontOfSize:fontSize]
+
+/************************************************************************************************************************/
+/***** GCD *****/
+#define kGlobalQueueDEFAULT       dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define kGlobalQueueHIGH          dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)
+#define kGlobalQueueLOW           dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0)
+#define kGlobalQueueBACKGROUND    dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)
+#define kMainQueue                dispatch_get_main_queue()
+
+/************************************************************************************************************************/
+/***** 常用宽度 *****/
+#define kScreenBounds   [UIScreen mainScreen].bounds
+#define kScreenWidth    kScreenBounds.size.width
+#define kScreenHeight   kScreenBounds.size.height
+
+
+
+#endif /* PrefixHeader_pch */

@@ -53,6 +53,8 @@
 		CD4A585D20E62CC300146928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD4A586920E62DB400146928 /* FGHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGHomeViewController.h; sourceTree = "<group>"; };
 		CD4A586A20E62DB400146928 /* FGHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGHomeViewController.m; sourceTree = "<group>"; };
+		FE94907D20ECFD4E001E196F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FE94907E20ECFE02001E196F /* ColorConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorConstant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,10 +129,7 @@
 				CD4A583820E62CC100146928 /* AppDelegate.m */,
 				CD4A586920E62DB400146928 /* FGHomeViewController.h */,
 				CD4A586A20E62DB400146928 /* FGHomeViewController.m */,
-				CD4A584020E62CC300146928 /* Assets.xcassets */,
-				CD4A584220E62CC300146928 /* LaunchScreen.storyboard */,
-				CD4A584520E62CC300146928 /* Info.plist */,
-				CD4A584620E62CC300146928 /* main.m */,
+				FE94907C20ECFD2F001E196F /* SupportingFiles */,
 			);
 			path = FingerGuess;
 			sourceTree = "<group>";
@@ -151,6 +150,19 @@
 				CD4A585D20E62CC300146928 /* Info.plist */,
 			);
 			path = FingerGuessUITests;
+			sourceTree = "<group>";
+		};
+		FE94907C20ECFD2F001E196F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CD4A584020E62CC300146928 /* Assets.xcassets */,
+				CD4A584220E62CC300146928 /* LaunchScreen.storyboard */,
+				CD4A584520E62CC300146928 /* Info.plist */,
+				CD4A584620E62CC300146928 /* main.m */,
+				FE94907D20ECFD4E001E196F /* PrefixHeader.pch */,
+				FE94907E20ECFE02001E196F /* ColorConstant.h */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,9 +500,10 @@
 			baseConfigurationReference = A729398CB3F1B5CC6E77B5BE /* Pods-FingerGuess.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ST6DF8EBB7;
-				INFOPLIST_FILE = FingerGuess/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FingerGuess/SupportingFiles/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/FingerGuess/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -498,6 +511,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gangneng.FingerGuess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -507,9 +521,10 @@
 			baseConfigurationReference = 75360607976EB28C421275AB /* Pods-FingerGuess.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ST6DF8EBB7;
-				INFOPLIST_FILE = FingerGuess/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FingerGuess/SupportingFiles/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/FingerGuess/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -517,6 +532,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gangneng.FingerGuess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
