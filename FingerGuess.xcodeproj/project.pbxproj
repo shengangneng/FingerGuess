@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C9DEDACC97991402EAB2E3B /* libPods-FingerGuess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB6C5E2985DF027E8FEFC27 /* libPods-FingerGuess.a */; };
+		CD4A583920E62CC100146928 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4A583820E62CC100146928 /* AppDelegate.m */; };
+		CD4A584120E62CC300146928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4A584020E62CC300146928 /* Assets.xcassets */; };
+		CD4A584420E62CC300146928 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4A584220E62CC300146928 /* LaunchScreen.storyboard */; };
+		CD4A584720E62CC300146928 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4A584620E62CC300146928 /* main.m */; };
+		CD4A585120E62CC300146928 /* FingerGuessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4A585020E62CC300146928 /* FingerGuessTests.m */; };
+		CD4A585C20E62CC300146928 /* FingerGuessUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4A585B20E62CC300146928 /* FingerGuessUITests.m */; };
+		CD4A586B20E62DB400146928 /* FGHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4A586A20E62DB400146928 /* FGHomeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD4A584D20E62CC300146928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD4A582C20E62CC100146928 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD4A583320E62CC100146928;
+			remoteInfo = FingerGuess;
+		};
+		CD4A585820E62CC300146928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD4A582C20E62CC100146928 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD4A583320E62CC100146928;
+			remoteInfo = FingerGuess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75360607976EB28C421275AB /* Pods-FingerGuess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FingerGuess.release.xcconfig"; path = "Pods/Target Support Files/Pods-FingerGuess/Pods-FingerGuess.release.xcconfig"; sourceTree = "<group>"; };
+		A729398CB3F1B5CC6E77B5BE /* Pods-FingerGuess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FingerGuess.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FingerGuess/Pods-FingerGuess.debug.xcconfig"; sourceTree = "<group>"; };
+		ACB6C5E2985DF027E8FEFC27 /* libPods-FingerGuess.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FingerGuess.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4A583420E62CC100146928 /* FingerGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4A583720E62CC100146928 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD4A583820E62CC100146928 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD4A584020E62CC300146928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD4A584320E62CC300146928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD4A584520E62CC300146928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD4A584620E62CC300146928 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD4A584C20E62CC300146928 /* FingerGuessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FingerGuessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4A585020E62CC300146928 /* FingerGuessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FingerGuessTests.m; sourceTree = "<group>"; };
+		CD4A585220E62CC300146928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD4A585720E62CC300146928 /* FingerGuessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FingerGuessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4A585B20E62CC300146928 /* FingerGuessUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FingerGuessUITests.m; sourceTree = "<group>"; };
+		CD4A585D20E62CC300146928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD4A586920E62DB400146928 /* FGHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGHomeViewController.h; sourceTree = "<group>"; };
+		CD4A586A20E62DB400146928 /* FGHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGHomeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD4A583120E62CC100146928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C9DEDACC97991402EAB2E3B /* libPods-FingerGuess.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4A584920E62CC300146928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4A585420E62CC300146928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1078CF3BC4E1F3D9CE574389 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACB6C5E2985DF027E8FEFC27 /* libPods-FingerGuess.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74AC5B530FA576A8E7DADB11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A729398CB3F1B5CC6E77B5BE /* Pods-FingerGuess.debug.xcconfig */,
+				75360607976EB28C421275AB /* Pods-FingerGuess.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD4A582B20E62CC100146928 = {
+			isa = PBXGroup;
+			children = (
+				CD4A583620E62CC100146928 /* FingerGuess */,
+				CD4A584F20E62CC300146928 /* FingerGuessTests */,
+				CD4A585A20E62CC300146928 /* FingerGuessUITests */,
+				CD4A583520E62CC100146928 /* Products */,
+				74AC5B530FA576A8E7DADB11 /* Pods */,
+				1078CF3BC4E1F3D9CE574389 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD4A583520E62CC100146928 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD4A583420E62CC100146928 /* FingerGuess.app */,
+				CD4A584C20E62CC300146928 /* FingerGuessTests.xctest */,
+				CD4A585720E62CC300146928 /* FingerGuessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD4A583620E62CC100146928 /* FingerGuess */ = {
+			isa = PBXGroup;
+			children = (
+				CD4A583720E62CC100146928 /* AppDelegate.h */,
+				CD4A583820E62CC100146928 /* AppDelegate.m */,
+				CD4A586920E62DB400146928 /* FGHomeViewController.h */,
+				CD4A586A20E62DB400146928 /* FGHomeViewController.m */,
+				CD4A584020E62CC300146928 /* Assets.xcassets */,
+				CD4A584220E62CC300146928 /* LaunchScreen.storyboard */,
+				CD4A584520E62CC300146928 /* Info.plist */,
+				CD4A584620E62CC300146928 /* main.m */,
+			);
+			path = FingerGuess;
+			sourceTree = "<group>";
+		};
+		CD4A584F20E62CC300146928 /* FingerGuessTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD4A585020E62CC300146928 /* FingerGuessTests.m */,
+				CD4A585220E62CC300146928 /* Info.plist */,
+			);
+			path = FingerGuessTests;
+			sourceTree = "<group>";
+		};
+		CD4A585A20E62CC300146928 /* FingerGuessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD4A585B20E62CC300146928 /* FingerGuessUITests.m */,
+				CD4A585D20E62CC300146928 /* Info.plist */,
+			);
+			path = FingerGuessUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD4A583320E62CC100146928 /* FingerGuess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD4A586020E62CC300146928 /* Build configuration list for PBXNativeTarget "FingerGuess" */;
+			buildPhases = (
+				7CD09BE38AEE20F9FCC3D2E9 /* [CP] Check Pods Manifest.lock */,
+				CD4A583020E62CC100146928 /* Sources */,
+				CD4A583120E62CC100146928 /* Frameworks */,
+				CD4A583220E62CC100146928 /* Resources */,
+				863A7889A0E4A573A321F04F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FingerGuess;
+			productName = FingerGuess;
+			productReference = CD4A583420E62CC100146928 /* FingerGuess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD4A584B20E62CC300146928 /* FingerGuessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD4A586320E62CC300146928 /* Build configuration list for PBXNativeTarget "FingerGuessTests" */;
+			buildPhases = (
+				CD4A584820E62CC300146928 /* Sources */,
+				CD4A584920E62CC300146928 /* Frameworks */,
+				CD4A584A20E62CC300146928 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD4A584E20E62CC300146928 /* PBXTargetDependency */,
+			);
+			name = FingerGuessTests;
+			productName = FingerGuessTests;
+			productReference = CD4A584C20E62CC300146928 /* FingerGuessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD4A585620E62CC300146928 /* FingerGuessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD4A586620E62CC300146928 /* Build configuration list for PBXNativeTarget "FingerGuessUITests" */;
+			buildPhases = (
+				CD4A585320E62CC300146928 /* Sources */,
+				CD4A585420E62CC300146928 /* Frameworks */,
+				CD4A585520E62CC300146928 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD4A585920E62CC300146928 /* PBXTargetDependency */,
+			);
+			name = FingerGuessUITests;
+			productName = FingerGuessUITests;
+			productReference = CD4A585720E62CC300146928 /* FingerGuessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD4A582C20E62CC100146928 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FG;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = shengangneng;
+				TargetAttributes = {
+					CD4A583320E62CC100146928 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					CD4A584B20E62CC300146928 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CD4A583320E62CC100146928;
+					};
+					CD4A585620E62CC300146928 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CD4A583320E62CC100146928;
+					};
+				};
+			};
+			buildConfigurationList = CD4A582F20E62CC100146928 /* Build configuration list for PBXProject "FingerGuess" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD4A582B20E62CC100146928;
+			productRefGroup = CD4A583520E62CC100146928 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD4A583320E62CC100146928 /* FingerGuess */,
+				CD4A584B20E62CC300146928 /* FingerGuessTests */,
+				CD4A585620E62CC300146928 /* FingerGuessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD4A583220E62CC100146928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4A584420E62CC300146928 /* LaunchScreen.storyboard in Resources */,
+				CD4A584120E62CC300146928 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4A584A20E62CC300146928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4A585520E62CC300146928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CD09BE38AEE20F9FCC3D2E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FingerGuess-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		863A7889A0E4A573A321F04F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FingerGuess/Pods-FingerGuess-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FingerGuess/Pods-FingerGuess-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD4A583020E62CC100146928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4A584720E62CC300146928 /* main.m in Sources */,
+				CD4A586B20E62DB400146928 /* FGHomeViewController.m in Sources */,
+				CD4A583920E62CC100146928 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4A584820E62CC300146928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4A585120E62CC300146928 /* FingerGuessTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4A585320E62CC300146928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4A585C20E62CC300146928 /* FingerGuessUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD4A584E20E62CC300146928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD4A583320E62CC100146928 /* FingerGuess */;
+			targetProxy = CD4A584D20E62CC300146928 /* PBXContainerItemProxy */;
+		};
+		CD4A585920E62CC300146928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD4A583320E62CC100146928 /* FingerGuess */;
+			targetProxy = CD4A585820E62CC300146928 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD4A584220E62CC300146928 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD4A584320E62CC300146928 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD4A585E20E62CC300146928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD4A585F20E62CC300146928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD4A586120E62CC300146928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A729398CB3F1B5CC6E77B5BE /* Pods-FingerGuess.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ST6DF8EBB7;
+				INFOPLIST_FILE = FingerGuess/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gangneng.FingerGuess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD4A586220E62CC300146928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75360607976EB28C421275AB /* Pods-FingerGuess.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ST6DF8EBB7;
+				INFOPLIST_FILE = FingerGuess/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gangneng.FingerGuess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD4A586420E62CC300146928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ST6DF8EBB7;
+				INFOPLIST_FILE = FingerGuessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gangneng.FingerGuessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FingerGuess.app/FingerGuess";
+			};
+			name = Debug;
+		};
+		CD4A586520E62CC300146928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ST6DF8EBB7;
+				INFOPLIST_FILE = FingerGuessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gangneng.FingerGuessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FingerGuess.app/FingerGuess";
+			};
+			name = Release;
+		};
+		CD4A586720E62CC300146928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ST6DF8EBB7;
+				INFOPLIST_FILE = FingerGuessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gangneng.FingerGuessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FingerGuess;
+			};
+			name = Debug;
+		};
+		CD4A586820E62CC300146928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ST6DF8EBB7;
+				INFOPLIST_FILE = FingerGuessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gangneng.FingerGuessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FingerGuess;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD4A582F20E62CC100146928 /* Build configuration list for PBXProject "FingerGuess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4A585E20E62CC300146928 /* Debug */,
+				CD4A585F20E62CC300146928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD4A586020E62CC300146928 /* Build configuration list for PBXNativeTarget "FingerGuess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4A586120E62CC300146928 /* Debug */,
+				CD4A586220E62CC300146928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD4A586320E62CC300146928 /* Build configuration list for PBXNativeTarget "FingerGuessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4A586420E62CC300146928 /* Debug */,
+				CD4A586520E62CC300146928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD4A586620E62CC300146928 /* Build configuration list for PBXNativeTarget "FingerGuessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4A586720E62CC300146928 /* Debug */,
+				CD4A586820E62CC300146928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD4A582C20E62CC100146928 /* Project object */;
+}
