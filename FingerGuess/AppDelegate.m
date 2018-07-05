@@ -19,7 +19,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[FGHomeViewController alloc] init];
+    
+    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:[[FGHomeViewController alloc] init]];
+    
+    self.window.rootViewController = navigation;
     [self.window makeKeyAndVisible];
     return YES;
 }

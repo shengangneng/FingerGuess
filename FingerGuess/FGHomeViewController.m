@@ -17,6 +17,8 @@
 @property (nonatomic, strong) UIImageView *leftItem3;
 @property (nonatomic, strong) UIImageView *leftItem4;
 @property (nonatomic, strong) UIImageView *leftItem5;
+// Data
+@property (nonatomic, assign) BOOL leftItemHasShow;
 
 @end
 
@@ -30,27 +32,40 @@
 }
 
 - (void)viewDidLayoutSubviews {
+}
+
+- (void)showAndDismiss:(UIButton *)sender {
+    if (self.leftItemHasShow) return;
     double duration = 0.2;
-    double delay = 0;
+    double delay = 0.5;
+    __block NSInteger index = 0;
     for (UIView *view in self.leftItemView.subviews) {
         if ([view isKindOfClass:[UIImageView class]]) {
-            [self animateWithDuration:duration delay:delay itemView:view];
-            delay+=duration;
+            __weak typeof(self) weakself = self;
+            [self animateWithDuration:duration delay:delay itemView:view index:index completeIndex:^(NSInteger cIndex) {
+                __strong typeof(self) strongself = weakself;
+                index += 1;
+                if (cIndex == 6) {
+                    strongself.leftItemHasShow = NO;
+                }
+            }];
+            delay += duration;
         }
     }
 }
 
-- (void)animateWithDuration:(double)duration delay:(double)delay itemView:(UIView *)itemView {
+- (void)animateWithDuration:(double)duration delay:(double)delay itemView:(UIView *)itemView index:(NSInteger)index completeIndex:(void(^)(NSInteger))completeIndex {
     itemView.layer.transform = [self getTransformWithAngle:2.0];
     [UIView animateWithDuration:duration delay:delay options:UIViewAnimationOptionCurveEaseIn animations:^{
         itemView.layer.transform = [self getTransformWithAngle:0];
         [self.view layoutIfNeeded];
-    } completion:nil];
+    } completion:^(BOOL finished) {
+        completeIndex(index);
+    }];
 }
 
 - (CATransform3D)getTransformWithAngle:(CGFloat)angle {
     CGFloat offset = 100 / 2;
-    
     CATransform3D transform = CATransform3DIdentity;
     transform.m34 = -0.002;
     transform = CATransform3DTranslate(transform, -offset, 0, 0);
@@ -60,6 +75,11 @@
 }
 
 - (void)setupAttributes {
+    self.leftItemHasShow = NO;
+    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [leftButton addTarget:self action:@selector(showAndDismiss:) forControlEvents:UIControlEventTouchUpInside];
+    leftButton.backgroundColor = kLightGrayColor;
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
 }
 
 - (void)setupSubViews {
@@ -74,43 +94,44 @@
 
 - (void)setupConstraints {
     [self.leftItemView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.bottom.left.equalTo(self.view);
-        make.width.equalTo(@100);
+        make.top.equalTo(self.view.mas_top).offset(64);
+        make.bottom.left.equalTo(self.view);
+        make.width.equalTo(@80);
     }];
     [self.leftItem0 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.leftItemView);
         make.leading.equalTo(self.leftItemView.mas_leading);
-        make.width.height.equalTo(@100);
+        make.width.height.equalTo(@80);
     }];
     [self.leftItem1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.leftItemView);
         make.leading.equalTo(self.leftItemView.mas_leading);
         make.top.equalTo(self.leftItem0.mas_bottom);
-        make.width.height.equalTo(@100);
+        make.width.height.equalTo(@80);
     }];
     [self.leftItem2 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.leftItemView);
         make.leading.equalTo(self.leftItemView.mas_leading);
         make.top.equalTo(self.leftItem1.mas_bottom);
-        make.width.height.equalTo(@100);
+        make.width.height.equalTo(@80);
     }];
     [self.leftItem3 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.leftItemView);
         make.leading.equalTo(self.leftItemView.mas_leading);
         make.top.equalTo(self.leftItem2.mas_bottom);
-        make.width.height.equalTo(@100);
+        make.width.height.equalTo(@80);
     }];
     [self.leftItem4 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.leftItemView);
         make.leading.equalTo(self.leftItemView.mas_leading);
         make.top.equalTo(self.leftItem3.mas_bottom);
-        make.width.height.equalTo(@100);
+        make.width.height.equalTo(@80);
     }];
     [self.leftItem5 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.leftItemView);
         make.leading.equalTo(self.leftItemView.mas_leading);
         make.top.equalTo(self.leftItem4.mas_bottom);
-        make.width.height.equalTo(@100);
+        make.width.height.equalTo(@80);
     }];
 }
 
