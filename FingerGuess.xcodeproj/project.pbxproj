@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C9DEDACC97991402EAB2E3B /* libPods-FingerGuess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB6C5E2985DF027E8FEFC27 /* libPods-FingerGuess.a */; };
+		CD0B4D7920FF14C300B503A1 /* FGRefreshTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0B4D7820FF14C300B503A1 /* FGRefreshTestViewController.m */; };
 		CD4A583920E62CC100146928 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4A583820E62CC100146928 /* AppDelegate.m */; };
 		CD4A584120E62CC300146928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4A584020E62CC300146928 /* Assets.xcassets */; };
 		CD4A584420E62CC300146928 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4A584220E62CC300146928 /* LaunchScreen.storyboard */; };
@@ -38,6 +39,8 @@
 		75360607976EB28C421275AB /* Pods-FingerGuess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FingerGuess.release.xcconfig"; path = "Pods/Target Support Files/Pods-FingerGuess/Pods-FingerGuess.release.xcconfig"; sourceTree = "<group>"; };
 		A729398CB3F1B5CC6E77B5BE /* Pods-FingerGuess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FingerGuess.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FingerGuess/Pods-FingerGuess.debug.xcconfig"; sourceTree = "<group>"; };
 		ACB6C5E2985DF027E8FEFC27 /* libPods-FingerGuess.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FingerGuess.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0B4D7720FF14C300B503A1 /* FGRefreshTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGRefreshTestViewController.h; sourceTree = "<group>"; };
+		CD0B4D7820FF14C300B503A1 /* FGRefreshTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGRefreshTestViewController.m; sourceTree = "<group>"; };
 		CD4A583420E62CC100146928 /* FingerGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4A583720E62CC100146928 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD4A583820E62CC100146928 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 				CD4A586920E62DB400146928 /* FGHomeViewController.h */,
 				CD4A586A20E62DB400146928 /* FGHomeViewController.m */,
 				FE94907C20ECFD2F001E196F /* SupportingFiles */,
+				CD0B4D7720FF14C300B503A1 /* FGRefreshTestViewController.h */,
+				CD0B4D7820FF14C300B503A1 /* FGRefreshTestViewController.m */,
 			);
 			path = FingerGuess;
 			sourceTree = "<group>";
@@ -318,10 +323,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FingerGuess/Pods-FingerGuess-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +346,7 @@
 				CD4A584720E62CC300146928 /* main.m in Sources */,
 				CD4A586B20E62DB400146928 /* FGHomeViewController.m in Sources */,
 				CD4A583920E62CC100146928 /* AppDelegate.m in Sources */,
+				CD0B4D7920FF14C300B503A1 /* FGRefreshTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

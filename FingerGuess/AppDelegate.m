@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "FGHomeViewController.h"
+#import "FGRefreshTestViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +21,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:[[FGHomeViewController alloc] init]];
+    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:[[FGRefreshTestViewController alloc] init]];
     
     self.window.rootViewController = navigation;
     [self.window makeKeyAndVisible];
